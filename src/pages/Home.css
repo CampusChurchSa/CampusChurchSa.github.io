@@ -1,0 +1,66 @@
+/* Ensuring html and body take the full viewport without any scrollbars */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars */
+  }
+  
+  #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero section styling */
+  .hero {
+    background-image: url('/images/hd.jpg'); /* Replace with your image */
+    background-size: cover; /* Ensures the image fully covers the area */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Hero section takes up full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex; /* Uses Flexbox for centering */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    color: white;
+    text-align: center;
+    position: relative; /* Ensure positioning is handled properly */
+  }
+  
+  /* Content inside the hero section */
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 90%; /* Ensure content doesn't overflow */
+    margin: 0 auto; /* Centers content horizontally */
+  }
+  
+  /* Heading styling */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Blockquote styling */
+  blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 20px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .hero {
+      height: 80vh; /* Make the hero section slightly smaller on mobile */
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    blockquote {
+      font-size: 1.2rem;
+    }
+  }
+  

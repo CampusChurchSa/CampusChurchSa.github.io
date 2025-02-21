@@ -1,10 +1,32 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* app.css or global styles */
+* {
+  font-family: 'Montserrat', sans-serif; /* Set Montserrat as the global font */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Optional: Helps with consistent spacing */
+}
+/* For headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Bold for headings */
 }
 
+/* For regular text */
+p, span, div {
+  font-weight: 400; /* Regular weight for text */
+}
+
+#root {
+  width: 100%; /* Allow full width */
+  margin: 0;
+  padding: 0; /* Remove any padding around the root */
+}
+
+main {
+  text-align: center; /* Only center content, not navbar */
+}
+
+/* Reset logo styles */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -18,6 +40,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Keyframe animation */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -33,10 +56,17 @@
   }
 }
 
+/* Card Styles */
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+/* Ensure the navbar does not interfere with content */
+.content {
+  margin-top: 0; /* Reset margin-top */
+  padding: 0; /* Reset padding */
 }
